@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- bootstrap including -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container  bg-light text-dark pad ">
+        <div class="row">
+            <div class="col">
+                <div class="hel">Conference Registration Form</div>
+                <p class="he mt-3">We thank you for your interest in participating at our Conference! Fill in our online Conference Registration Form below to recieve your badge number and the schedule of the entire event.</p>
+            </div>
+            <div>
+                <form action="myForm">
+                    <!-- name suru -->
+                    <label for="name" class="hee">Attendee's Name:*</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="fname" name="firstname" placeholder="First Name" class="faka"  >
+                        </div>
+                        <div class="col">
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name" class="faka" >
+                        </div>
+                    </div>
+                    <p class="halka mb-3">Will appear on Conference badge</p>
+                    <!-- name sesh -->
+                    <!-- comapny email suru -->
+                   <div class="row">
+                        <div class="col">
+                            <label for="company" class="hee">Company/Organization*</label>
+                            <br>
+                            <input type="text" id="orgaName" name="organ" placeholder="" >
+                            <p class="halka mb-3">Will appear on Conference badge</p>
+                        </div>
+                        <!-- email -->
+                        <div class="col">
+                            <label for="email" class="hee">Email*</label>
+                            <br>
+                            <input type="text" id="email" name="email" placeholder="" >
+                            <p class="halka ">You will receive an activation link and the recipe of the fully completed registration form</p>
+                        </div>
+                   </div>
+                   <!-- company email sesh -->
+                   <!-- phone suru -->
+                   <div class="row mb-3">
+                       <div class="col">
+                        <label for="phn" class="hee">Phone*</label>
+                        <br>
+                        <input type="text" id="phn" name="phone" placeholder="### ### #####" >
+                       </div>
+                       <div class="col"></div>
+                   </div>
+                   <!-- phone sesh -->
+                   <!-- address -->
+                   <div class="row mb-3 title">
+                    <div class="col">
+                     <label for="add" class="hee">Address*</label>
+                     <br>
+                     <input type="text" id="add1" name="address1" placeholder="Street Address" >
+                     <br>
+                     <br>
+                     <input type="text" id="add2" name="address2" placeholder="Street Address Line 2" >
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" id="add3" name="address3" placeholder="City" >
+                    </div>
+                    <div class="col">
+                        <input type="text" id="add4" name="address4" placeholder="Region" >
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" id="add5" name="address5" placeholder="Portal/Zip Code" >
+                    </div>
+                    <div class="col">
+                        <input type="text" id="add6" name="address6" placeholder="Country" >
+                    </div>
+                </div>
+                <!-- address sesh -->
+                <!-- program title -->
+                <div class="row mb-3 title">
+                    <div class="col">
+                        <label for="program" class="hee">Your Conference Program Title*</label>
+                        <br>
+                         <input type="text" id="program" name="protitle" placeholder="" >
+                    </div>
+                </div>
+                <!-- program title sesh -->
+                <!-- attending suru -->
+                <div class="row">
+                    <div class="col">
+                        <label for="attending" class="hee mt-3">Attending*</label>
+                        <br>
+                        <!--  -->
+                        <input type="checkbox" id="one" name="one" value="one">
+                        <label for="one" class="checkboxDesign"> Morning Sessions</label><br><br>
+                        <!--  -->
+                        <input type="checkbox" id="two" name="two" value="two">
+                        <label for="two" class="checkboxDesign"> Afternoon Sessions</label><br><br>
+                        <!--  -->
+                        <input type="checkbox" id="three" name="three" value="three">
+                        <label for="three" class="checkboxDesign"> Workshops</label><br><br>
+                        <!--  -->
+                        <input type="checkbox" id="four" name="four" value="four">
+                        <label for="four" class="checkboxDesign"> Dinner Banquet</label><br><br>
+                        <!--  -->
+                    </div>
+                    <p class="halka ">Extra seats will be included depending on your choice in the conference registration form</p>
+                </div>
+                <!-- attending sesh -->
+                <!-- accomodation suru -->
+                <div class="row">
+                    <div class="col">
+                        <label for="accomodation" class="hee mt-3">Do you require accomodations*</label>
+                        <br>
+                        <!--  -->
+                        <label class="contner">Yes
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="contner">No
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <button type="button" class="butDesign">Register</button>
+                    </div>
+                    <div class="col"></div>
+                 </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

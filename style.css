@@ -1,0 +1,111 @@
+.hel{
+    font-size: 60px;
+ }
+ .he{
+     font-size: 20px;
+ }
+ .pad{
+     padding: 50px;
+     margin-bottom: 50px;
+ }
+ .hee{
+     font-size: 25px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+ .title
+ {
+     margin-top: 40px;
+ }
+ .faka{
+     width: 70%;
+ }
+ .design{
+     width: 100%;   
+ }
+ .halka{
+     color: gray;
+     font-size: 20px;
+ }
+ input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     resize: vertical;
+   }
+   input[type=checkbox]{
+       width: 22px;
+       height: 22px;
+       border: 0.5px solid #ccc;
+       border-radius: 4px;
+       
+   }
+   .checkboxDesign{
+     font-size: 22px;
+     margin-left: 20px;
+   }
+   .radioDesign{
+       border-radius: 50%;
+   }
+   .contner {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     margin-bottom: 12px;
+     cursor: pointer;
+     font-size: 22px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+   
+   .contner input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+   }
+   
+   .checkmark {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 25px;
+     width: 25px;
+     background-color: white;
+     border: 0.5px solid #ccc;
+     border-radius: 50%;
+   }
+   
+   .contner input:checked ~ .checkmark {
+     background-color: #2196F3;
+   }
+   
+  
+   .checkmark:after {
+     content: "";
+     position: absolute;
+     display: none;
+   }
+   
+   .contner input:checked ~ .checkmark:after {
+     display: block;;
+   }
+   
+   /* Style the indicator (dot/circle) */
+   .contner .checkmark:after {
+        top: 7px;
+       left: 7px;
+       width: 8px;
+       height: 8px;
+       border-radius: 50%;
+       background: white;
+   }
+   .butDesign{
+       width: 150px;
+       height: 50px;
+       margin-left: 100px;
+       background-color: rgb(53, 51, 51);
+       color: whitesmoke;
+   }
